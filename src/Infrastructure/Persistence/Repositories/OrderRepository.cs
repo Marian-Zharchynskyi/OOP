@@ -35,24 +35,22 @@ namespace Infrastructure.Persistence.Repositories
         public async Task<Order> Add(Order order)
         {
             await _context.Orders.AddAsync(order);
+            await _context.SaveChangesAsync();
             return order;
         }
 
         public async Task<Order> Update(Order order)
         {
              _context.Orders.Update(order);
+             await _context.SaveChangesAsync();
             return order;
         }
 
         public async Task<Order> Delete(Order order)
         {
             _context.Orders.Remove(order);
-            return order;
-        }
-
-        public async Task SaveChangesAsync()
-        {
             await _context.SaveChangesAsync();
+            return order;
         }
     }
 }

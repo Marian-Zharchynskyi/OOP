@@ -60,7 +60,6 @@ namespace Application.Implementation.Services
             try
             {
                 var createdProduct = await _productRepository.Add(product);
-                await _productRepository.SaveChangesAsync();
                 _logger.Log($"Product with ID {createdProduct.Id} created successfully.");
                 return createdProduct;
             }
@@ -76,7 +75,6 @@ namespace Application.Implementation.Services
             try
             {
                 var updatedProduct = await _productRepository.Update(product);
-                await _productRepository.SaveChangesAsync();
                 _logger.Log($"Product with ID {updatedProduct.Id} updated successfully.");
                 return updatedProduct;
             }
@@ -100,7 +98,6 @@ namespace Application.Implementation.Services
                 }
 
                 var deletedProduct = await _productRepository.Delete(product);
-                await _productRepository.SaveChangesAsync();
                 _logger.Log($"Product with ID {deletedProduct.Id} deleted successfully.");
                 return deletedProduct;
             }

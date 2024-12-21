@@ -1,5 +1,6 @@
 
 using Application.Abstraction.Interfaces;
+using Application.Implementation;
 using Application.Implementation.Services;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -12,5 +13,7 @@ public static class ConfigureApplication
         services.AddScoped<IProductService, ProductService>();
 
         services.AddScoped<IOrderService, OrderService>();
+        
+        services.AddScoped<IOrderBuilder, OrderBuilder>();
     }
 }

@@ -2,6 +2,7 @@
 using Application.Abstraction.Interfaces.Queries;
 using Application.Abstraction.Interfaces.Repositories;
 using Domain.Orders;
+using Domain.Products;
 
 namespace Application.Implementation.Services
 {
@@ -10,12 +11,15 @@ namespace Application.Implementation.Services
         private readonly IOrderRepository _orderRepository;
         private readonly IOrderQueries _orderQueries;
         private readonly ILogger _logger;
+        private readonly IOrderBuilder _orderBuilder;
 
-        public OrderService(IOrderRepository orderRepository, IOrderQueries orderQueries, ILogger logger)
+        public OrderService(IOrderRepository orderRepository, IOrderQueries orderQueries, ILogger logger,
+            IOrderBuilder orderBuilder)
         {
             _orderRepository = orderRepository;
             _orderQueries = orderQueries;
             _logger = logger;
+            _orderBuilder = orderBuilder;
         }
 
         public async Task<IReadOnlyList<Order>> GetAllOrdersAsync()
@@ -55,13 +59,21 @@ namespace Application.Implementation.Services
             }
         }
 
-        public async Task<Order> CreateOrderAsync(Order order)
+        public async Task<Order> CreateOrderAsync(List<Product> products)
         {
             try
             {
-                order.UpdateTotalAmount();
+                foreach (var product in products)
+                {
+                    _orderBuilder.AddProduct(product);
+                }
+
+                _orderBuilder.CalculateTotal();
+
+                var order = _orderBuilder.Build();
+        
                 var createdOrder = await _orderRepository.Add(order);
-                await _orderRepository.SaveChangesAsync();
+        
                 _logger.Log($"Order with ID {createdOrder.Id} created successfully.");
                 return createdOrder;
             }
@@ -72,13 +84,13 @@ namespace Application.Implementation.Services
             }
         }
 
+
         public async Task<Order> UpdateOrderAsync(Order order)
         {
             try
             {
                 order.UpdateTotalAmount();
                 var updatedOrder = await _orderRepository.Update(order);
-                await _orderRepository.SaveChangesAsync();
                 _logger.Log($"Order with ID {updatedOrder.Id} updated successfully.");
                 return updatedOrder;
             }
@@ -102,7 +114,6 @@ namespace Application.Implementation.Services
                 }
 
                 var deletedOrder = await _orderRepository.Delete(order);
-                await _orderRepository.SaveChangesAsync();
                 _logger.Log($"Order with ID {deletedOrder.Id} deleted successfully.");
                 return deletedOrder;
             }
