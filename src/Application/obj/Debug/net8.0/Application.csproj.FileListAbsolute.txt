@@ -1,0 +1,136 @@
+/Users/bohdankrasiuk/Documents/oa/dotnet_course/repo/Lecture2/Application/bin/Debug/net8.0/Application.deps.json
+/Users/bohdankrasiuk/Documents/oa/dotnet_course/repo/Lecture2/Application/bin/Debug/net8.0/Application.dll
+/Users/bohdankrasiuk/Documents/oa/dotnet_course/repo/Lecture2/Application/bin/Debug/net8.0/Application.pdb
+/Users/bohdankrasiuk/Documents/oa/dotnet_course/repo/Lecture2/Application/bin/Debug/net8.0/Domain.dll
+/Users/bohdankrasiuk/Documents/oa/dotnet_course/repo/Lecture2/Application/bin/Debug/net8.0/Domain.pdb
+/Users/bohdankrasiuk/Documents/oa/dotnet_course/repo/Lecture2/Application/obj/Debug/net8.0/Application.csproj.AssemblyReference.cache
+/Users/bohdankrasiuk/Documents/oa/dotnet_course/repo/Lecture2/Application/obj/Debug/net8.0/Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/bohdankrasiuk/Documents/oa/dotnet_course/repo/Lecture2/Application/obj/Debug/net8.0/Application.AssemblyInfoInputs.cache
+/Users/bohdankrasiuk/Documents/oa/dotnet_course/repo/Lecture2/Application/obj/Debug/net8.0/Application.AssemblyInfo.cs
+/Users/bohdankrasiuk/Documents/oa/dotnet_course/repo/Lecture2/Application/obj/Debug/net8.0/Application.csproj.CoreCompileInputs.cache
+/Users/bohdankrasiuk/Documents/oa/dotnet_course/repo/Lecture2/Application/obj/Debug/net8.0/Application.csproj.CopyComplete
+/Users/bohdankrasiuk/Documents/oa/dotnet_course/repo/Lecture2/Application/obj/Debug/net8.0/Application.dll
+/Users/bohdankrasiuk/Documents/oa/dotnet_course/repo/Lecture2/Application/obj/Debug/net8.0/refint/Application.dll
+/Users/bohdankrasiuk/Documents/oa/dotnet_course/repo/Lecture2/Application/obj/Debug/net8.0/Application.pdb
+/Users/bohdankrasiuk/Documents/oa/dotnet_course/repo/Lecture2/Application/obj/Debug/net8.0/ref/Application.dll
+D:\OA\REST-API\ProjectWithTests\Lecture2\src\Application\bin\Debug\net8.0\Domain.dll
+D:\OA\REST-API\ProjectWithTests\Lecture2\src\Application\obj\Debug\net8.0\Application.csproj.AssemblyReference.cache
+D:\OA\REST-API\ProjectWithTests\Lecture2\src\Application\obj\Debug\net8.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\OA\REST-API\ProjectWithTests\Lecture2\src\Application\obj\Debug\net8.0\Application.AssemblyInfoInputs.cache
+D:\OA\REST-API\ProjectWithTests\Lecture2\src\Application\obj\Debug\net8.0\Application.AssemblyInfo.cs
+D:\OA\REST-API\ProjectWithTests\Lecture2\src\Application\obj\Debug\net8.0\Application.csproj.CoreCompileInputs.cache
+D:\OA\C#\3 курс\OOP\ProjectWithTests\Lecture2\src\Application\bin\Debug\net8.0\Application.deps.json
+D:\OA\C#\3 курс\OOP\ProjectWithTests\Lecture2\src\Application\bin\Debug\net8.0\Application.dll
+D:\OA\C#\3 курс\OOP\ProjectWithTests\Lecture2\src\Application\bin\Debug\net8.0\Application.pdb
+D:\OA\C#\3 курс\OOP\ProjectWithTests\Lecture2\src\Application\bin\Debug\net8.0\Domain.dll
+D:\OA\C#\3 курс\OOP\ProjectWithTests\Lecture2\src\Application\bin\Debug\net8.0\Domain.pdb
+D:\OA\C#\3 курс\OOP\ProjectWithTests\Lecture2\src\Application\obj\Debug\net8.0\Application.csproj.AssemblyReference.cache
+D:\OA\C#\3 курс\OOP\ProjectWithTests\Lecture2\src\Application\obj\Debug\net8.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\OA\C#\3 курс\OOP\ProjectWithTests\Lecture2\src\Application\obj\Debug\net8.0\Application.AssemblyInfoInputs.cache
+D:\OA\C#\3 курс\OOP\ProjectWithTests\Lecture2\src\Application\obj\Debug\net8.0\Application.AssemblyInfo.cs
+D:\OA\C#\3 курс\OOP\ProjectWithTests\Lecture2\src\Application\obj\Debug\net8.0\Application.csproj.CoreCompileInputs.cache
+D:\OA\C#\3 курс\OOP\ProjectWithTests\Lecture2\src\Application\obj\Debug\net8.0\Applicat.44B5EDA2.Up2Date
+D:\OA\C#\3 курс\OOP\ProjectWithTests\Lecture2\src\Application\obj\Debug\net8.0\Application.dll
+D:\OA\C#\3 курс\OOP\ProjectWithTests\Lecture2\src\Application\obj\Debug\net8.0\refint\Application.dll
+D:\OA\C#\3 курс\OOP\ProjectWithTests\Lecture2\src\Application\obj\Debug\net8.0\Application.pdb
+D:\OA\C#\3 курс\OOP\ProjectWithTests\Lecture2\src\Application\obj\Debug\net8.0\ref\Application.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\.msCoverageSourceRootsMapping_Application
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\testhost.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\testhost.exe
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\Application.deps.json
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\Application.runtimeconfig.json
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\Application.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\Application.pdb
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\FluentValidation.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\MediatR.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\MediatR.Contracts.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\Microsoft.TestPlatform.CoreUtilities.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\Microsoft.TestPlatform.PlatformAbstractions.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\Microsoft.TestPlatform.CommunicationUtilities.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\Microsoft.TestPlatform.CrossPlatEngine.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\Microsoft.TestPlatform.Utilities.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.Common.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\Optional.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\cs\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\cs\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\de\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\de\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\es\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\es\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\fr\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\fr\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\it\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\it\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\ja\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\ja\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\ko\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\ko\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\pl\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\pl\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\pt-BR\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\pt-BR\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\ru\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\ru\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\tr\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\tr\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\zh-Hans\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\zh-Hans\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CoreUtilities.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\cs\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\cs\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\cs\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\de\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\de\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\de\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\es\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\es\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\es\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\fr\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\fr\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\fr\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\it\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\it\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\it\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\ja\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\ja\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\ja\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\ko\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\ko\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\ko\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\pl\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\pl\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\pl\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\pt-BR\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\pt-BR\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\pt-BR\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\ru\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\ru\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\ru\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\tr\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\tr\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\tr\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\zh-Hans\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\zh-Hans\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\zh-Hans\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\Domain.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\bin\Debug\net8.0\Domain.pdb
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\obj\Debug\net8.0\Application.csproj.AssemblyReference.cache
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\obj\Debug\net8.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\obj\Debug\net8.0\Application.AssemblyInfoInputs.cache
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\obj\Debug\net8.0\Application.AssemblyInfo.cs
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\obj\Debug\net8.0\Application.csproj.CoreCompileInputs.cache
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\obj\Debug\net8.0\Applicat.44B5EDA2.Up2Date
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\obj\Debug\net8.0\Application.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\obj\Debug\net8.0\refint\Application.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\obj\Debug\net8.0\Application.pdb
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\obj\Debug\net8.0\Application.genruntimeconfig.cache
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Application\obj\Debug\net8.0\ref\Application.dll

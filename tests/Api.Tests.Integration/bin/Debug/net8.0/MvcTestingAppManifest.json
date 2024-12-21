@@ -1,0 +1,7 @@
+{
+  "Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\OA\\C#\\3 курс\\OOP\\FinalProject\\Lecture2\\src\\Application",
+  "Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\OA\\C#\\3 курс\\OOP\\FinalProject\\Lecture2\\src\\Domain",
+  "Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\OA\\C#\\3 курс\\OOP\\FinalProject\\Lecture2\\src\\Infrastructure",
+  "Tests.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\OA\\C#\\3 курс\\OOP\\FinalProject\\Lecture2\\tests\\Tests.Common",
+  "Tests.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\OA\\C#\\3 курс\\OOP\\FinalProject\\Lecture2\\tests\\Tests.Data"
+}
