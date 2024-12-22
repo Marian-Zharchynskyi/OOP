@@ -9,13 +9,13 @@ public class ConsoleInvoker
     private readonly IProductService _productService;
     private readonly IOrderService _orderService;
     private readonly IConsoleWrapper _consoleWrapper;
-    private readonly OrderNotifier _orderNotifier;
-    private readonly OrderObserver _orderObserver;
+    private readonly INotifier _orderNotifier;
+    private readonly IObserver _orderObserver;
     private readonly Dictionary<UserChoice, Func<Task>> _actionMap;
 
     public ConsoleInvoker(IProductService productService, IOrderService orderService, IConsoleWrapper consoleWrapper,
-        OrderNotifier orderNotifier,
-        OrderObserver orderObserver)
+        INotifier orderNotifier,
+        IObserver orderObserver)
     {
         _productService = productService;
         _orderService = orderService;

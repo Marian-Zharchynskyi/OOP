@@ -34,23 +34,74 @@ namespace Infrastructure.Persistence.Repositories
 
         public async Task<Order> Add(Order order)
         {
+            foreach (var product in order.Products)
+            {
+                var existingProduct = await _context.Products
+                    .AsNoTracking()
+                    .FirstOrDefaultAsync(x => x.Id == product.Id);
+
+                if (existingProduct == null)
+                {
+                    await _context.Products.AddAsync(product);
+                }
+                else
+                {
+                    _context.Entry(product).State = EntityState.Modified;
+                }
+            }
+
+            var existingOrder = _context.Orders.Local.FirstOrDefault(x => x.Id == order.Id);
+            if (existingOrder != null)
+            {
+                _context.Entry(existingOrder).State = EntityState.Detached;
+            }
             await _context.Orders.AddAsync(order);
+
             await _context.SaveChangesAsync();
-            _context.ChangeTracker.Clear();
+            _context.ChangeTracker.Clear(); 
             return order;
         }
 
         public async Task<Order> Update(Order order)
         {
-             _context.Orders.Update(order);
-             await _context.SaveChangesAsync();
-             _context.ChangeTracker.Clear();
+            foreach (var product in order.Products)
+            {
+                var existingProduct = await _context.Products
+                    .AsNoTracking()
+                    .FirstOrDefaultAsync(x => x.Id == product.Id);
+
+                if (existingProduct == null)
+                {
+                    await _context.Products.AddAsync(product);
+                }
+                else
+                {
+                    _context.Entry(product).State = EntityState.Modified;
+                }
+            }
+
+            var existingOrder = _context.Orders.Local.FirstOrDefault(x => x.Id == order.Id);
+            if (existingOrder != null)
+            {
+                _context.Entry(existingOrder).State = EntityState.Detached;
+            }
+ 
+            _context.Orders.Update(order);
+
+            await _context.SaveChangesAsync();
+            _context.ChangeTracker.Clear();
             return order;
         }
 
         public async Task<Order> Delete(Order order)
         {
+            var existingOrder = _context.Orders.Local.FirstOrDefault(x => x.Id == order.Id);
+            if (existingOrder != null)
+            {
+                _context.Entry(existingOrder).State = EntityState.Detached;
+            }
             _context.Orders.Remove(order);
+
             await _context.SaveChangesAsync();
             _context.ChangeTracker.Clear();
             return order;
