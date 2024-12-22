@@ -4,9 +4,9 @@ namespace Domain.Orders;
 
 public class Order
 {
-    public Guid Id { get; private set; }
-    public List<Product>? Products { get; }
-    public decimal TotalAmount { get; private set; }
+    public Guid Id { get; set; }
+    public List<Product>? Products { get; set; }
+    public decimal TotalAmount { get; set; }
 
     public Order()
     {

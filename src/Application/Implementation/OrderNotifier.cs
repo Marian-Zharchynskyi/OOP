@@ -1,30 +1,36 @@
 ﻿using Application.Abstraction.Interfaces;
-using Domain.Orders;
 
-namespace Application.Implementation;
-
-using System.Collections.Generic;
-
-public class OrderNotifier
+namespace Application.Implementation
 {
-    private readonly List<IObserver> _observers = new();
-
-    public void AddObserver(IObserver observer)
+    public class OrderNotifier : INotifier
     {
-        _observers.Add(observer);
-    }
+        private readonly List<IObserver> _observers = new();
+        private readonly ILogger _logger; 
 
-    public void RemoveObserver(IObserver observer)
-    {
-        _observers.Remove(observer);
-    }
-
-    public void Notify(Order order)
-    {
-        foreach (var observer in _observers)
+        public OrderNotifier(ILogger logger)
         {
-            observer.Update(order);
+            _logger = logger;
+        }
+
+        public void Attach(IObserver observer)
+        {
+            _observers.Add(observer);
+            _logger.Log("Observer attached."); 
+        }
+
+        public void Detach(IObserver observer)
+        {
+            _observers.Remove(observer);
+            _logger.Log("Observer detached."); 
+        }
+
+        public void Notify(string message)
+        {
+            foreach (var observer in _observers)
+            {
+                observer.Update(message);
+            }
+            _logger.Log($"Notification sent: {message}"); 
         }
     }
 }
-

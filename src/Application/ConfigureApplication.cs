@@ -16,6 +16,10 @@ public static class ConfigureApplication
         
         services.AddScoped<IOrderBuilder, OrderBuilder>();
         
+        services.AddScoped<IObserver, OrderObserver>();
+
+        services.AddScoped<INotifier, OrderNotifier>();
+        
         services.AddScoped<ConsoleInvoker>();
     }
 }

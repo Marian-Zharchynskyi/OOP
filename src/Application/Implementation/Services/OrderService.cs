@@ -3,11 +3,10 @@ using Application.Abstraction.Interfaces.Repositories;
 using Application.Abstraction.Interfaces.Queries;
 using Domain.Orders;
 using Domain.Products;
-using System.Collections;
 
 namespace Application.Implementation.Services
 {
-    public class OrderService : IOrderService, IEnumerable<Product>
+    public class OrderService : IOrderService
     {
         private readonly IOrderRepository _orderRepository;
         private readonly IOrderQueries _orderQueries;
@@ -155,16 +154,6 @@ namespace Application.Implementation.Services
                 _logger.LogError(ex, "Error adding products to order.");
                 return null;
             }
-        }
-
-        public IEnumerator<Product> GetEnumerator()
-        {
-            return _orderBuilder.Build().Products.GetEnumerator();
-        }
-
-        IEnumerator IEnumerable.GetEnumerator()
-        {
-            return GetEnumerator();
         }
     }
 }

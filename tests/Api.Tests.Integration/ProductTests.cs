@@ -10,7 +10,7 @@ using Xunit;
 
 namespace Api.Tests.Integration;
 
-public class ProductServiceTests
+public class ProductTests
 {
     private readonly IProductService _productService;
     private readonly IProductRepository _mockProductRepository;
@@ -19,17 +19,14 @@ public class ProductServiceTests
 
     private readonly Product _existingProduct;
 
-    public ProductServiceTests()
+    public ProductTests()
     {
-        // Arrange
         _mockProductRepository = Substitute.For<IProductRepository>();
         _mockProductQueries = Substitute.For<IProductQueries>();
         _mockLogger = Substitute.For<ILogger>();
 
-        // Act
         _productService = new ProductService(_mockProductRepository, _mockProductQueries, _mockLogger);
 
-        // Assert
         _existingProduct = ProductData.Product;
     }
 

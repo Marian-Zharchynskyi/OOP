@@ -4,6 +4,14 @@
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AFluentValidationMvcExtensions_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002E_002E_003F_002E_002E_003F_002E_002E_003FLibrary_003FApplication_0020Support_003FJetBrains_003FRider2024_002E2_003Fresharper_002Dhost_003FSourcesCache_003Fecc6246fd855ee6a4602ae9988369e56f35ce0107895f34cfd2b9274e27ac1_003FFluentValidationMvcExtensions_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AIAsyncLifetime_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002E_002E_003F_002E_002E_003F_002E_002E_003FLibrary_003FApplication_0020Support_003FJetBrains_003FRider2024_002E2_003Fresharper_002Dhost_003FSourcesCache_003F113d80f4b95c179d4d85797d8a2f7c527e67c7752fa51cc335ee02c1d83d017_003FIAsyncLifetime_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AIConfiguration_002Ecs_002Fl_003AC_0021_003FUsers_003FMARIAN_003FAppData_003FRoaming_003FJetBrains_003FRider2024_002E3_003Fresharper_002Dhost_003FDecompilerCache_003Fdecompiler_003F649f9a5315084d038b64e29ea11b1fb56d20_003Fc2_003F4404a1b4_003FIConfiguration_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003ALoggingBuilderExtensions_002Ecs_002Fl_003AC_0021_003FUsers_003FMARIAN_003FAppData_003FRoaming_003FJetBrains_003FRider2024_002E3_003Fresharper_002Dhost_003FDecompilerCache_003Fdecompiler_003Fdf7a339e325b4bc59b14a148610a3a19c720_003F45_003F2edbe069_003FLoggingBuilderExtensions_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=dad0e599_002D6dc3_002D4f7d_002D8618_002Df235f25b163f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="ShouldCreateFaculty" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;ProjectFile&gt;3293DB0E-C1B0-453C-AAE5-F192D9910642/f:ProductTests.cs&lt;/ProjectFile&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;ProjectFile&gt;3293DB0E-C1B0-453C-AAE5-F192D9910642/f:ProductTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;3293DB0E-C1B0-453C-AAE5-F192D9910642/f:LoggerTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;3293DB0E-C1B0-453C-AAE5-F192D9910642/f:OrderTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;TestAncestor&gt;&#xD;
+      &lt;TestId&gt;xUnit::3293DB0E-C1B0-453C-AAE5-F192D9910642::net8.0::Api.Tests.Integration.OrderObserverTests&lt;/TestId&gt;&#xD;
+    &lt;/TestAncestor&gt;&#xD;
+  &lt;/Or&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

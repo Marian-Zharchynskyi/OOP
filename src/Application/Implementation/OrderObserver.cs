@@ -1,20 +1,32 @@
-﻿using Application.Abstraction.Interfaces;
-using Domain.Orders;
+﻿using System.Collections;
+using Application.Abstraction.Interfaces;
 
 namespace Application.Implementation;
 
-public class OrderObserver : IObserver
+public class OrderObserver : IObserver, IEnumerable<string>
 {
-    private readonly string _observerName;
+    private readonly List<string> _notifications = new();
+    private readonly ILogger _logger;
 
-    public OrderObserver(string observerName)
+    public OrderObserver(ILogger logger)
     {
-        _observerName = observerName;
+        _logger = logger;
     }
 
-    public void Update(Order order)
+    public void Update(string message)
     {
-        Console.WriteLine(
-            $"[{_observerName}] Замовлення з ID {order.Id} було оновлено. Загальна сума: {order.TotalAmount}");
+        _notifications.Add(message);
+        
+        _logger.Log($"Received notification: {message}");
+    }
+
+    public IEnumerator<string> GetEnumerator()
+    {
+        return _notifications.GetEnumerator();
+    }
+
+    IEnumerator IEnumerable.GetEnumerator()
+    {
+        return GetEnumerator();
     }
 }

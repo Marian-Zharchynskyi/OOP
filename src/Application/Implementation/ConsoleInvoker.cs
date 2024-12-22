@@ -1,9 +1,6 @@
 ﻿using Domain.Enums;
 using Application.Abstraction.Interfaces;
 using Domain.Products;
-using Domain.Orders;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
 namespace Application.Implementation;
 
@@ -12,13 +9,20 @@ public class ConsoleInvoker
     private readonly IProductService _productService;
     private readonly IOrderService _orderService;
     private readonly IConsoleWrapper _consoleWrapper;
+    private readonly OrderNotifier _orderNotifier;
+    private readonly OrderObserver _orderObserver;
     private readonly Dictionary<UserChoice, Func<Task>> _actionMap;
 
-    public ConsoleInvoker(IProductService productService, IOrderService orderService, IConsoleWrapper consoleWrapper)
+    public ConsoleInvoker(IProductService productService, IOrderService orderService, IConsoleWrapper consoleWrapper,
+        OrderNotifier orderNotifier,
+        OrderObserver orderObserver)
     {
         _productService = productService;
         _orderService = orderService;
         _consoleWrapper = consoleWrapper;
+        _orderNotifier = orderNotifier;
+        _orderObserver = orderObserver;
+        _orderNotifier.Attach(_orderObserver);
 
         _actionMap = new Dictionary<UserChoice, Func<Task>>
         {
@@ -87,13 +91,12 @@ public class ConsoleInvoker
         if (products.Count == 0)
         {
             _consoleWrapper.WriteLine("No products found.");
+            return;
         }
-        else
+
+        foreach (var product in products)
         {
-            foreach (var product in products)
-            {
-                _consoleWrapper.WriteLine($"ID: {product.Id}, Name: {product.Name}, Price: {product.Price}");
-            }
+            _consoleWrapper.WriteLine($"ID: {product.Id}, Name: {product.Name}, Price: {product.Price}");
         }
     }
 
@@ -106,11 +109,10 @@ public class ConsoleInvoker
             if (product == null)
             {
                 _consoleWrapper.WriteLine("Product not found.");
+                return;
             }
-            else
-            {
-                _consoleWrapper.WriteLine($"ID: {product.Id}, Name: {product.Name}, Price: {product.Price}");
-            }
+
+            _consoleWrapper.WriteLine($"ID: {product.Id}, Name: {product.Name}, Price: {product.Price}");
         }
         else
         {
@@ -132,6 +134,8 @@ public class ConsoleInvoker
             if (createdProduct != null)
             {
                 _consoleWrapper.WriteLine($"Product created with ID: {createdProduct.Id}");
+
+                _orderNotifier.Notify($"Product created with ID: {createdProduct.Id}");
             }
             else
             {
@@ -213,13 +217,12 @@ public class ConsoleInvoker
         if (orders.Count == 0)
         {
             _consoleWrapper.WriteLine("No orders found.");
+            return;
         }
-        else
+
+        foreach (var order in orders)
         {
-            foreach (var order in orders)
-            {
-                _consoleWrapper.WriteLine($"Order ID: {order.Id}, Total Amount: {order.TotalAmount}");
-            }
+            _consoleWrapper.WriteLine($"Order ID: {order.Id}, Total Amount: {order.TotalAmount}");
         }
     }
 
@@ -232,11 +235,10 @@ public class ConsoleInvoker
             if (order == null)
             {
                 _consoleWrapper.WriteLine("Order not found.");
+                return;
             }
-            else
-            {
-                _consoleWrapper.WriteLine($"Order ID: {order.Id}, Total Amount: {order.TotalAmount}");
-            }
+
+            _consoleWrapper.WriteLine($"Order ID: {order.Id}, Total Amount: {order.TotalAmount}");
         }
         else
         {
@@ -267,6 +269,8 @@ public class ConsoleInvoker
             if (order != null)
             {
                 _consoleWrapper.WriteLine($"Order created with ID: {order.Id}");
+
+                _orderNotifier.Notify($"Order created with ID: {order.Id}");
             }
             else
             {
