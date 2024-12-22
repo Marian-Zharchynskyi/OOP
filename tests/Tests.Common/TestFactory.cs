@@ -1,65 +1,55 @@
+using API;
 using Infrastructure.Persistence;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc.Testing;
-using Microsoft.AspNetCore.TestHost;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.VisualStudio.TestPlatform.TestHost;
 using Npgsql;
 using Testcontainers.PostgreSql;
 using Xunit;
 
 namespace Tests.Common;
 
-public class IntegrationTestWebFactory : WebApplicationFactory<Program>, IAsyncLifetime
+public class TestFactory : IAsyncLifetime
 {
     private readonly PostgreSqlContainer _dbContainer = new PostgreSqlBuilder()
         .WithImage("postgres:latest")
-        .WithDatabase("lecture-2-database")
+        .WithDatabase("OOPFinalProject")
         .WithUsername("postgres")
         .WithPassword("postgres")
         .Build();
+    public IServiceProvider ServiceProvider { get; private set; }
 
-    protected override void ConfigureWebHost(IWebHostBuilder builder)
+    public async Task InitializeAsync()
     {
-        builder.ConfigureTestServices(services =>
+        await _dbContainer.StartAsync();
+
+        var host = await HostCreator.CreateHost([], builder =>
         {
-            RegisterDatabase(services);
-        }).ConfigureAppConfiguration((_, config) =>
-        {
-            config
-                .AddJsonFile("appsettings.Test.json")
-                .AddEnvironmentVariables();
+            builder.ConfigureAppConfiguration((context, config) =>
+            {
+                config.AddJsonFile("appsettings.Test.json", optional: false, reloadOnChange: true);
+            });
+
+            builder.ConfigureServices((context, services) =>
+            {
+                services.RemoveServiceByType(typeof(DbContextOptions<ApplicationDbContext>));
+
+                var dataSourceBuilder = new NpgsqlDataSourceBuilder(_dbContainer.GetConnectionString());
+                dataSourceBuilder.EnableDynamicJson();
+                var dataSource = dataSourceBuilder.Build();
+
+                services.AddDbContext<ApplicationDbContext>(options =>
+                    options.UseNpgsql(dataSource)
+                        .UseSnakeCaseNamingConvention());
+            });
         });
+
+        ServiceProvider = host.Services;
     }
 
-    private void RegisterDatabase(IServiceCollection services)
+    public async Task DisposeAsync()
     {
-        services.RemoveServiceByType(typeof(DbContextOptions<ApplicationDbContext>));
-
-        var dataSourceBuilder = new NpgsqlDataSourceBuilder(_dbContainer.GetConnectionString());
-        dataSourceBuilder.EnableDynamicJson();
-        var dataSource = dataSourceBuilder.Build();
-
-        services.AddDbContext<ApplicationDbContext>(
-            options => options
-                .UseNpgsql(
-                    dataSource,
-                    b => b.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName))
-                .UseSnakeCaseNamingConvention()
-                .ConfigureWarnings(w => w.Ignore(CoreEventId.ManyServiceProvidersCreatedWarning)));
-    }
-
-    public Task InitializeAsync()
-    {
-        return _dbContainer.StartAsync();
-    }
-
-    public new Task DisposeAsync()
-    {
-        return _dbContainer.DisposeAsync().AsTask();
+        await _dbContainer.DisposeAsync().AsTask();
     }
 }
 
@@ -67,10 +57,9 @@ public static class TestFactoryExtensions
 {
     public static void RemoveServiceByType(this IServiceCollection services, Type serviceType)
     {
-        var descriptor = services.SingleOrDefault(s => s.ServiceType == serviceType);
+        var descriptor = services.SingleOrDefault(d => d.ServiceType == serviceType);
+
         if (descriptor is not null)
-        {
             services.Remove(descriptor);
-        }
     }
 }

@@ -1,12 +1,13 @@
 ﻿using Application.Abstraction.Interfaces;
-using Application.Abstraction.Interfaces.Queries;
 using Application.Abstraction.Interfaces.Repositories;
+using Application.Abstraction.Interfaces.Queries;
 using Domain.Orders;
 using Domain.Products;
+using System.Collections;
 
 namespace Application.Implementation.Services
 {
-    public class OrderService : IOrderService
+    public class OrderService : IOrderService, IEnumerable<Product>
     {
         private readonly IOrderRepository _orderRepository;
         private readonly IOrderQueries _orderQueries;
@@ -71,9 +72,9 @@ namespace Application.Implementation.Services
                 _orderBuilder.CalculateTotal();
 
                 var order = _orderBuilder.Build();
-        
+
                 var createdOrder = await _orderRepository.Add(order);
-        
+
                 _logger.Log($"Order with ID {createdOrder.Id} created successfully.");
                 return createdOrder;
             }
@@ -83,7 +84,6 @@ namespace Application.Implementation.Services
                 return null;
             }
         }
-
 
         public async Task<Order> UpdateOrderAsync(Order order)
         {
@@ -122,6 +122,49 @@ namespace Application.Implementation.Services
                 _logger.LogError(ex, "Error deleting order.");
                 return null;
             }
+        }
+
+        public async Task<Order> AddProductsToOrderAsync(Guid orderId, List<Product> products)
+        {
+            try
+            {
+                var order = await _orderQueries.GetById(orderId);
+                if (order == null)
+                {
+                    _logger.LogError(new KeyNotFoundException($"Order with ID {orderId} not found."),
+                        "Error adding products to order.");
+                    return null;
+                }
+
+                foreach (var product in products)
+                {
+                    if (!order.Products.Contains(product))
+                    {
+                        order.Products.Add(product);
+                    }
+                }
+
+                order.UpdateTotalAmount();
+
+                var updatedOrder = await _orderRepository.Update(order);
+                _logger.Log($"Products added to order with ID {updatedOrder.Id} successfully.");
+                return updatedOrder;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error adding products to order.");
+                return null;
+            }
+        }
+
+        public IEnumerator<Product> GetEnumerator()
+        {
+            return _orderBuilder.Build().Products.GetEnumerator();
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
         }
     }
 }

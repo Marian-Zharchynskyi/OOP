@@ -15,5 +15,7 @@ public static class ConfigureApplication
         services.AddScoped<IOrderService, OrderService>();
         
         services.AddScoped<IOrderBuilder, OrderBuilder>();
+        
+        services.AddScoped<ConsoleInvoker>();
     }
 }

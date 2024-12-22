@@ -1,16 +1,8 @@
-﻿using Infrastructure;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Hosting;
+﻿using API;
+using Application.Implementation;
+using Microsoft.Extensions.DependencyInjection;
 
-var host = Host.CreateDefaultBuilder(args)
-    .ConfigureAppConfiguration((context, config) =>
-    {
-        config.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
-    })
-    .ConfigureServices((context, services) =>
-    {
-        var configuration = context.Configuration;
+var host = await HostCreator.CreateHost(args);
 
-        services.AddInfrastructure(configuration);
-    })
-    .Build();
+var consoleInvoker = host.Services.GetRequiredService<ConsoleInvoker>();
+await consoleInvoker.Run();

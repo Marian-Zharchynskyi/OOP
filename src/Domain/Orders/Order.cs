@@ -5,8 +5,7 @@ namespace Domain.Orders;
 public class Order
 {
     public Guid Id { get; private set; }
-    public List<Product> Products { get; }
-
+    public List<Product>? Products { get; }
     public decimal TotalAmount { get; private set; }
 
     public Order()

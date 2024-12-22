@@ -15,9 +15,13 @@ public class OrderBuilder : IOrderBuilder
 
     public IOrderBuilder AddProduct(Product product)
     {
-        _order.Products.Add(product);
+        if (!_order.Products.Any(p => p.Id == product.Id))
+        {
+            _order.Products.Add(product);
+        }
         return this;
     }
+
 
     public IOrderBuilder CalculateTotal()
     {

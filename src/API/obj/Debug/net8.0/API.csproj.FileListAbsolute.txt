@@ -12,8 +12,6 @@ D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\API\bin\Debug\net8.0\API.pdb
 D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\API\bin\Debug\net8.0\EFCore.NamingConventions.dll
 D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\API\bin\Debug\net8.0\FluentValidation.dll
 D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\API\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
-D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\API\bin\Debug\net8.0\MediatR.dll
-D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\API\bin\Debug\net8.0\MediatR.Contracts.dll
 D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\API\bin\Debug\net8.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
 D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
 D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -57,7 +55,6 @@ D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\API\bin\Debug\net8.0\Microsoft
 D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\API\bin\Debug\net8.0\Newtonsoft.Json.dll
 D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\API\bin\Debug\net8.0\Npgsql.dll
 D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\API\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
-D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\API\bin\Debug\net8.0\Optional.dll
 D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\API\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
 D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\API\bin\Debug\net8.0\cs\Microsoft.TestPlatform.CoreUtilities.resources.dll
 D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\API\bin\Debug\net8.0\cs\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
@@ -144,3 +141,4 @@ D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\API\obj\Debug\net8.0\API.pdb
 D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\API\obj\Debug\net8.0\API.genruntimeconfig.cache
 D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\API\obj\Debug\net8.0\ref\API.dll
 D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\API\bin\Debug\net8.0\appsettings.json
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\API\obj\Debug\net8.0\API.sourcelink.json

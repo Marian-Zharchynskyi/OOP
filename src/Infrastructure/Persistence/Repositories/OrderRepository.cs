@@ -17,8 +17,8 @@ namespace Infrastructure.Persistence.Repositories
         public async Task<IReadOnlyList<Order>> GetAll()
         {
             var orders = await _context.Orders
-                .AsNoTracking()
                 .Include(o => o.Products)
+                .AsNoTracking()
                 .ToListAsync();
 
             return orders;
@@ -27,8 +27,8 @@ namespace Infrastructure.Persistence.Repositories
         public async Task<Order> GetById(Guid id)
         {
             return (await _context.Orders
-                .AsNoTracking()
                 .Include(o => o.Products)
+                .AsNoTracking()
                 .FirstOrDefaultAsync(o => o.Id == id))!;
         }
 
@@ -36,6 +36,7 @@ namespace Infrastructure.Persistence.Repositories
         {
             await _context.Orders.AddAsync(order);
             await _context.SaveChangesAsync();
+            _context.ChangeTracker.Clear();
             return order;
         }
 
@@ -43,6 +44,7 @@ namespace Infrastructure.Persistence.Repositories
         {
              _context.Orders.Update(order);
              await _context.SaveChangesAsync();
+             _context.ChangeTracker.Clear();
             return order;
         }
 
@@ -50,6 +52,7 @@ namespace Infrastructure.Persistence.Repositories
         {
             _context.Orders.Remove(order);
             await _context.SaveChangesAsync();
+            _context.ChangeTracker.Clear();
             return order;
         }
     }

@@ -42,3 +42,4 @@ D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Domain\obj\Debug\net8.0\Domain
 D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Domain\obj\Debug\net8.0\refint\Domain.dll
 D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Domain\obj\Debug\net8.0\Domain.pdb
 D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Domain\obj\Debug\net8.0\ref\Domain.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\src\Domain\obj\Debug\net8.0\Domain.sourcelink.json

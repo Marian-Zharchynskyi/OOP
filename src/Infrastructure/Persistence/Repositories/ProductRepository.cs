@@ -32,6 +32,7 @@ public class ProductRepository : IProductRepository, IProductQueries
     {
         await _context.Products.AddAsync(product);
         await _context.SaveChangesAsync();
+        _context.ChangeTracker.Clear();
         return product;
     }
 
@@ -39,6 +40,7 @@ public class ProductRepository : IProductRepository, IProductQueries
     {
         _context.Products.Update(product);
         await _context.SaveChangesAsync();
+        _context.ChangeTracker.Clear();
         return product;
     }
 
@@ -46,6 +48,7 @@ public class ProductRepository : IProductRepository, IProductQueries
     {
         _context.Products.Remove(product);
         await _context.SaveChangesAsync();
+        _context.ChangeTracker.Clear();
         return product;
     }
 }

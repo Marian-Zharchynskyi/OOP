@@ -10,4 +10,5 @@ public interface IOrderService
     Task<Order> CreateOrderAsync(List<Product> products);
     Task<Order> UpdateOrderAsync(Order order);
     Task<Order> DeleteOrderAsync(Guid id);
+    Task<Order> AddProductsToOrderAsync(Guid orderId, List<Product> products);
 }
