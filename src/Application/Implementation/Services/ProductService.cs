@@ -74,6 +74,14 @@ namespace Application.Implementation.Services
         {
             try
             {
+                var existingProduct = await _productQueries.GetById(product.Id);
+                if (existingProduct == null)
+                {
+                    var ex = new KeyNotFoundException($"Product with ID {product.Id} not found.");
+                    _logger.LogError(ex, "Error updating product.");
+                    return null;
+                }
+
                 var updatedProduct = await _productRepository.Update(product);
                 _logger.Log($"Product with ID {updatedProduct.Id} updated successfully.");
                 return updatedProduct;
@@ -84,7 +92,7 @@ namespace Application.Implementation.Services
                 return null;
             }
         }
-
+        
         public async Task<Product> DeleteProductAsync(Guid id)
         {
             try

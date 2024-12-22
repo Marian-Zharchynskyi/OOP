@@ -32,3 +32,4 @@ D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\tests\Tests.Data\obj\Debug\net8.0\
 D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\tests\Tests.Data\obj\Debug\net8.0\refint\Tests.Data.dll
 D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\tests\Tests.Data\obj\Debug\net8.0\Tests.Data.pdb
 D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\tests\Tests.Data\obj\Debug\net8.0\ref\Tests.Data.dll
+D:\OA\C#\3 курс\OOP\FinalProject\Lecture2\tests\Tests.Data\obj\Debug\net8.0\Tests.Data.sourcelink.json
